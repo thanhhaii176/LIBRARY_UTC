@@ -20,7 +20,8 @@ document.getElementById("confirmBtn").addEventListener("click", function(e) {
         window.location.href = "../html/transfer.html";
         }else if (method === "cod") {
         alert("Đặt hàng thành công! Bạn sẽ thanh toán khi nhận hàng.");
-        window.location.href = "../html/success.html"; // có thể thay bằng trang cảm ơn
+        localStorage.removeItem('cart');
+        window.location.href = "../html/success.html"; 
     }
 
 
